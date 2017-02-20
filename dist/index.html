@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Theme Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/main.min.css" rel="stylesheet">
+</head>
+
+<body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="#">
+                    <img class="stick-log" src="http://www.caplinq.com/templates/caplinq/images/sticky-logo.png">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Products</a></li>
+                    <li><a href="#about">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                
+                <h3>Document Filter</h3>
+                <button>Reset all filters</button>
+                <button>Collapse All</button>
+                <h2 data-toggle="collapse" data-target="#demo">Document Types</h2>
+                <ul  id="demo" class="collapse">
+                    <li>
+                        <input type="radio" name="document_type"  id ="rdo_1"/> <label for="rdo_1"> Technical Data Sheet </label> <span>(86)</span>
+                    </li>
+                     <li>
+                        <input type="radio" name="document_type"  id ="rdo_2"/> <label for="rdo_2">Safety Data Sheets </label> <span>(25)</span>
+                    </li>
+                     <li>
+                        <input type="radio" name="document_type"  id ="rdo_3"/> <label for="rdo_3"> RoHS Declarations</label> <span> (7)</span>
+                    </li>
+                      <li>
+                        <input type="radio" name="document_type"  id ="rdo_4"/> <label for="rdo_4">REACH Declaration</label> <span> (5)</span>
+                    </li>
+                     <li>
+                        <input type="radio" name="document_type"  id ="rdo_5"/> <label for="rdo_5"> Brochures</label> <span> (2)</span>
+                    </li>
+                    <li>
+                        <input type="radio" name="document_type"  id ="rdo_6"/> <label for="rdo_6"> Technical Documents</label> <span> (11)</span>
+                    </li>
+                     <li>
+                        <input type="radio" name="document_type"  id ="rdo_7"/> <label for="rdo_7"> User Manual </label> <span> (1)</span>
+                    </li>
+                </ul>
+
+
+<div class="bs-example">
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">1. What is HTML?</a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of Web pages. <a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">2. What is Bootstrap?</a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>Bootstrap is a powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">3. What is CSS?</a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+	<p><strong>Note:</strong> Click on the linked heading text to expand or collapse accordion panels.</p>
+</div>
+
+                
+            </div>
+            <div class="col-md-9"> </div>
+
+            <!-- Bootstrap core JavaScript================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="assets/js/main.min.js"></script>
+</body>
+
+</html>
