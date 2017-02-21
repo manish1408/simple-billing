@@ -14,7 +14,10 @@
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/main.min.css" rel="stylesheet">
+    <link href=" https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
+
 
 <body role="document">
 
@@ -40,51 +43,56 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <!--/.nav-collapse -->
+
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container main">
         <div class="row">
-            <div class="col-md-3">
-
+            <div class="col-md-3 col-xs-12 filter-boxes">
                 <h3>Document Filter</h3>
-                <button>Reset all filters</button>
-                <button>Collapse All</button>
+                <hr/>
+                <button class="btn btn-xs btn-danger">Reset all filters</button>
+                <button class="btn btn-xs btn-danger">Collapse All</button>
                 <h2 data-toggle="collapse" data-target="#demo"></h2>
-
-
-
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Document Types</a>
+                                <span class="pull-right">Clear</span>
                             </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 <ul>
                                     <li>
-                                        <input type="radio" name="document_type" id="rdo_1" /> <label for="rdo_1"> Technical Data Sheet </label>                                        <span>(86)</span>
+                                        <input type="radio" name="document_type" id="rdo_1" /> <label for="rdo_1"> Technical Data Sheet </label>
+                                        <font class="fCount">(86)</font>
                                     </li>
                                     <li>
-                                        <input type="radio" name="document_type" id="rdo_2" /> <label for="rdo_2">Safety Data Sheets </label>                                        <span>(25)</span>
+                                        <input type="radio" name="document_type" id="rdo_2" /> <label for="rdo_2">Safety Data Sheets </label>
+                                        <font class="fCount">(25)</font>
                                     </li>
                                     <li>
-                                        <input type="radio" name="document_type" id="rdo_3" /> <label for="rdo_3"> RoHS Declarations</label>                                        <span> (7)</span>
+                                        <input type="radio" name="document_type" id="rdo_3" /> <label for="rdo_3"> RoHS Declarations</label>
+                                        <font class="fCount"> (7)</font>
                                     </li>
                                     <li>
-                                        <input type="radio" name="document_type" id="rdo_4" /> <label for="rdo_4">REACH Declaration</label>                                        <span> (5)</span>
+                                        <input type="radio" name="document_type" id="rdo_4" /> <label for="rdo_4">REACH Declaration</label>
+                                        <font class="fCount"> (5)</font>
                                     </li>
                                     <li>
-                                        <input type="radio" name="document_type" id="rdo_5" /> <label for="rdo_5"> Brochures</label>                                        <span> (2)</span>
+                                        <input type="radio" name="document_type" id="rdo_5" /> <label for="rdo_5"> Brochures</label>
+                                        <font class="fCount"> (2)</font>
                                     </li>
                                     <li>
-                                        <input type="radio" name="document_type" id="rdo_6" /> <label for="rdo_6"> Technical Documents</label>                                        <span> (11)</span>
+                                        <input type="radio" name="document_type" id="rdo_6" /> <label for="rdo_6"> Technical Documents</label>
+                                        <font class="fCount"> (11)</font>
                                     </li>
                                     <li>
-                                        <input type="radio" name="document_type" id="rdo_7" /> <label for="rdo_7"> User Manual </label>                                        <span> (1)</span>
+                                        <input type="radio" name="document_type" id="rdo_7" /> <label for="rdo_7"> User Manual </label>
+                                        <font class="fCount"> (1)</font>
                                     </li>
                                 </ul>
                             </div>
@@ -94,26 +102,27 @@
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Categories</a>
+                                <span class="pull-right">Clear</span>
                             </h4>
                         </div>
-                        <div id="collapseTwo" class="panel-collapse collapse">
+                        <div id="collapseTwo" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 <ul>
-                                    <li class="fData"><input type="checkbox" id="cats_1"/><label for="cats_14"><label for="cats_14" class="hover"> Specialty Tapes &amp; Films <font class="fCount">(26)</font></label></li>
+                                    <li class="fData"><input type="checkbox" id="cats_14" /><label for="cats_14"><label for="cats_14" class="hover"> Specialty Tapes &amp; Films <font class="fCount">(26)</font></label></li>
 
-                                    <li class="fData"><input type="checkbox" id="cats_1"/><label for="cats_1"> Soldering Materials <font class="fCount">(1)</font></label></li>
-                                    <li class="fData"><input type="checkbox" id="cats_2"/><label for="cats_2"> Insulation Materials <font class="fCount">(27)</font></label></li>
-                                    <li class="fData"><input type="checkbox" id="cats_3"/><label for="cats_3"> Data Loggers, Indicators &amp; Packaging <font class="fCount">(1)</font></label></li>
-                                    <li class="fData"><input type="checkbox" id="cats_4"/><label for="cats_4"> Metals &amp; Alloys <font class="fCount">(1)</font></label></li>
-                                    <li class="fData"><input type="checkbox" id="cats_5"/><label for="cats_5"> Plastics, Silicones &amp; Rubbers <font class="fCount">(40)</font></label></li>
-                                    <li class="fData"><input type="checkbox" id="cats_6"/><label for="cats_6"> Molding Compounds <font class="fCount">(10)</font></label></li>
-                                    <li class="fData"><input type="checkbox" id="cats_7"/><label for="cats_7"> Potting, Casting &amp; Encapsulating <font class="fCount">(10)</font></label></li>
-                                    <li class="fData"><input type="checkbox" id="cats_8"/><label for="cats_8"> Sprays &amp; Aerosols <font class="fCount">(7)</font></label></li>
-                                    <li class="fData"><input type="checkbox" id="cats_9"/><label for="cats_9"> Cleaners, Conditioners &amp; Lubricants <font class="fCount">(9)</font></label></li>
-                                    <li class="fData"><input type="checkbox" id="cats_10"/><label for="cats_10"> Surface, Stencil &amp; Repellency Treatments <font class="fCount">(10)</font></label></li>
-                                    <li class="fData"><input type="checkbox" id="cats_11"/><label for="cats_11"> Adhesives &amp; Sealants <font class="fCount">(28)</font></label></li>
-                                    <li class="fData"><input type="checkbox" id="cats_12"/><label for="cats_12"> Conductive &amp; Antistatic Materials <font class="fCount">(9)</font></label></li>
-                                    <li class="fData"><input type="checkbox" id="cats_13"/><label for="cats_13"> Coating Powders &amp; Paints <font class="fCount">(3)</font></label></li>
+                                    <li class="fData"><input type="checkbox" id="cats_1" /><label for="cats_1"> Soldering Materials <font class="fCount">(1)</font></label></li>
+                                    <li class="fData"><input type="checkbox" id="cats_2" /><label for="cats_2"> Insulation Materials <font class="fCount">(27)</font></label></li>
+                                    <li class="fData"><input type="checkbox" id="cats_3" /><label for="cats_3"> Data Loggers, Indicators &amp; Packaging <font class="fCount">(1)</font></label></li>
+                                    <li class="fData"><input type="checkbox" id="cats_4" /><label for="cats_4"> Metals &amp; Alloys <font class="fCount">(1)</font></label></li>
+                                    <li class="fData"><input type="checkbox" id="cats_5" /><label for="cats_5"> Plastics, Silicones &amp; Rubbers <font class="fCount">(40)</font></label></li>
+                                    <li class="fData"><input type="checkbox" id="cats_6" /><label for="cats_6"> Molding Compounds <font class="fCount">(10)</font></label></li>
+                                    <li class="fData"><input type="checkbox" id="cats_7" /><label for="cats_7"> Potting, Casting &amp; Encapsulating <font class="fCount">(10)</font></label></li>
+                                    <li class="fData"><input type="checkbox" id="cats_8" /><label for="cats_8"> Sprays &amp; Aerosols <font class="fCount">(7)</font></label></li>
+                                    <li class="fData"><input type="checkbox" id="cats_9" /><label for="cats_9"> Cleaners, Conditioners &amp; Lubricants <font class="fCount">(9)</font></label></li>
+                                    <li class="fData"><input type="checkbox" id="cats_10" /><label for="cats_10"> Surface, Stencil &amp; Repellency Treatments <font class="fCount">(10)</font></label></li>
+                                    <li class="fData"><input type="checkbox" id="cats_11" /><label for="cats_11"> Adhesives &amp; Sealants <font class="fCount">(28)</font></label></li>
+                                    <li class="fData"><input type="checkbox" id="cats_12" /><label for="cats_12"> Conductive &amp; Antistatic Materials <font class="fCount">(9)</font></label></li>
+                                    <li class="fData"><input type="checkbox" id="cats_13" /><label for="cats_13"> Coating Powders &amp; Paints <font class="fCount">(3)</font></label></li>
                                 </ul>
                             </div>
                         </div>
@@ -122,121 +131,122 @@
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Sub Categories</a>
+                                <span class="pull-right">Clear</span>
                             </h4>
                         </div>
-                        <div id="collapseThree" class="panel-collapse collapse">
+                        <div id="collapseThree" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 <ul id="collapse2" class="fBody">
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1" class=""> Polyimide Tapes and Films <font class="fCount">(21)</font></label>
+                                        <input type="checkbox" id="scat_1" /> <label for="scat_1" class=""> Polyimide Tapes and Films <font class="fCount">(21)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1" class=""> Electrically Conductive Plastic Film <font class="fCount">(3)</font></label>
+                                        <input type="checkbox" id="scat_2" /> <label for="scat_2" class=""> Electrically Conductive Plastic Film <font class="fCount">(3)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1" class=""> Polyester Tapes and Films <font class="fCount">(2)</font></label>
+                                        <input type="checkbox" id="scat_3" /> <label for="scat_3" class=""> Polyester Tapes and Films <font class="fCount">(2)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1" class=""> Epoxy Coating Powders <font class="fCount">(3)</font></label>
+                                        <input type="checkbox" id="scat_4" /> <label for="scat_4" class=""> Epoxy Coating Powders <font class="fCount">(3)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1" class=""> Mold Release Agents <font class="fCount">(1)</font></label>
+                                        <input type="checkbox" id="scat_5" /> <label for="scat_5" class=""> Mold Release Agents <font class="fCount">(1)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1" class=""> Cleaners, Conditioners &amp; Lubricants <font class="fCount">(7)</font></label>
+                                        <input type="checkbox" id="scat_6" /> <label for="scat_6" class=""> Cleaners, Conditioners &amp; Lubricants <font class="fCount">(7)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1" class=""> Optically Clear Encapsulants <font class="fCount">(3)</font></label>
+                                        <input type="checkbox" id="scat_7" /> <label for="scat_7" class=""> Optically Clear Encapsulants <font class="fCount">(3)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1"> Graphitized Carbon Papers <font class="fCount">(2)</font></label>
+                                        <input type="checkbox" id="scat_8" /> <label for="scat_8"> Graphitized Carbon Papers <font class="fCount">(2)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1"> Activated Carbon Fabrics <font class="fCount">(1)</font></label>
+                                        <input type="checkbox" id="scat_9" /> <label for="scat_9"> Activated Carbon Fabrics <font class="fCount">(1)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1"> Epoxy Molding Compounds <font class="fCount">(0)</font></label>
+                                        <input type="checkbox" id="scat_10" /> <label for="scat_10"> Epoxy Molding Compounds <font class="fCount">(0)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1"> White Reflective Compounds <font class="fCount">(0)</font></label>
+                                        <input type="checkbox" id="scat_11" /> <label for="scat_11"> White Reflective Compounds <font class="fCount">(0)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1"> Cleaners <font class="fCount">(7)</font></label>
+                                        <input type="checkbox" id="scat_12" /> <label for="scat_12"> Cleaners <font class="fCount">(7)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1"> Conditioners <font class="fCount">(3)</font></label>
+                                        <input type="checkbox" id="scat_13" /> <label for="scat_13"> Conditioners <font class="fCount">(3)</font></label>
                                     </li>
                                     <li class="fData">
-                                      <input type="checkbox" id="scat"/>  <label for="scat_1"> Lubricants <font class="fCount">(1)</font></label>
+                                        <input type="checkbox" id="scat_14" /> <label for="scat_14"> Lubricants <font class="fCount">(1)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1" class=""> Solder Spheres <font class="fCount">(1)</font></label>
+                                        <input type="checkbox" id="scat_15" /> <label for="scat_15" class=""> Solder Spheres <font class="fCount">(1)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1"> Soldering Materials <font class="fCount">(1)</font></label>
+                                        <input type="checkbox" id="scat_16" /> <label for="scat_16"> Soldering Materials <font class="fCount">(1)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1" class=""> Conductive Tapes &amp; Films <font class="fCount">(4)</font></label>
+                                        <input type="checkbox" id="scat_17" /> <label for="scat_17" class=""> Conductive Tapes &amp; Films <font class="fCount">(4)</font></label>
                                     </li>
                                     <li class="fData">
-                                      <input type="checkbox" id="scat"/>  <label for="scat_1"> Copper Tapes &amp; Films <font class="fCount">(0)</font></label>
+                                        <input type="checkbox" id="scat_18" /> <label for="scat_18"> Copper Tapes &amp; Films <font class="fCount">(0)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1" class=""> Molding Compounds <font class="fCount">(3)</font></label>
+                                        <input type="checkbox" id="scat_19" /> <label for="scat_19" class=""> Molding Compounds <font class="fCount">(3)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1" class=""> Coating Powders &amp; Paints <font class="fCount">(3)</font></label>
+                                        <input type="checkbox" id="scat_20" /> <label for="scat_20" class=""> Coating Powders &amp; Paints <font class="fCount">(3)</font></label>
                                     </li>
                                     <li class="fData">
-                                      <input type="checkbox" id="scat"/>  <label for="scat_1"> Silicone Products <font class="fCount">(3)</font></label>
+                                        <input type="checkbox" id="scat_21" /> <label for="scat_21"> Silicone Products <font class="fCount">(3)</font></label>
                                     </li>
                                     <li class="fData">
-                                      <input type="checkbox" id="scat"/>  <label for="scat_1" class=""> Potting, Casting &amp; Encapsulating <font class="fCount">(2)</font></label>
+                                        <input type="checkbox" id="scat_22" /> <label for="scat_22" class=""> Potting, Casting &amp; Encapsulating <font class="fCount">(2)</font></label>
                                     </li>
                                     <li class="fData">
-                                      <input type="checkbox" id="scat"/>  <label for="scat_1"> Sprays &amp; Aerosols <font class="fCount">(1)</font></label>
+                                        <input type="checkbox" id="scat_23" /> <label for="scat_23"> Sprays &amp; Aerosols <font class="fCount">(1)</font></label>
                                     </li>
                                     <li class="fData">
-                                      <input type="checkbox" id="scat"/>  <label for="scat_1"> Insulation Materials <font class="fCount">(0)</font></label>
+                                        <input type="checkbox" id="scat_24" /> <label for="scat_24"> Insulation Materials <font class="fCount">(0)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1" class=""> Conductive &amp; Antistatic Materials <font class="fCount">(1)</font></label>
+                                        <input type="checkbox" id="scat_25" /> <label for="scat_25" class=""> Conductive &amp; Antistatic Materials <font class="fCount">(1)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1" class=""> Antistatic Bags, Tubing &amp; Materials <font class="fCount">(1)</font></label>
+                                        <input type="checkbox" id="scat_26" /> <label for="scat_26" class=""> Antistatic Bags, Tubing &amp; Materials <font class="fCount">(1)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1" class=""> Transfer-Grade Molding Compounds <font class="fCount">(1)</font></label>
+                                        <input type="checkbox" id="scat_27" /> <label for="scat_27" class=""> Transfer-Grade Molding Compounds <font class="fCount">(1)</font></label>
                                     </li>
                                     <li class="fData">
-                                      <input type="checkbox" id="scat"/>  <label for="scat_1" class=""> Injection-Grade Molding Compounds <font class="fCount">(1)</font></label>
+                                        <input type="checkbox" id="scat_28" /> <label for="scat_28" class=""> Injection-Grade Molding Compounds <font class="fCount">(1)</font></label>
                                     </li>
                                     <li class="fData">
-                                      <input type="checkbox" id="scat"/>  <label for="scat_1"> Compression-Grade Molding Compounds <font class="fCount">(0)</font></label>
+                                        <input type="checkbox" id="scat_29" /> <label for="scat_29"> Compression-Grade Molding Compounds <font class="fCount">(0)</font></label>
                                     </li>
                                     <li class="fData">
-                                       <input type="checkbox" id="scat"/> <label for="scat_1"> Tapes &amp; Films <font class="fCount">(13)</font></label>
+                                        <input type="checkbox" id="scat_30" /> <label for="scat_30"> Tapes &amp; Films <font class="fCount">(13)</font></label>
                                     </li>
                                     <li class="fData">
-                                      <input type="checkbox" id="scat"/>  <label for="scat_1"> Antistatic Tapes &amp; Films <font class="fCount">(3)</font></label>
+                                        <input type="checkbox" id="scat_31" /> <label for="scat_31"> Antistatic Tapes &amp; Films <font class="fCount">(3)</font></label>
                                     </li>
                                     <li class="fData">
-                                      <input type="checkbox" id="scat"/>  <label for="scat_1"> Insulating Tapes &amp; Film <font class="fCount">(16)</font></label>
+                                        <input type="checkbox" id="scat_32" /> <label for="scat_32"> Insulating Tapes &amp; Film <font class="fCount">(16)</font></label>
                                     </li>
                                     <li class="fData">
-                                      <input type="checkbox" id="scat"/>  <label for="scat_1"> Liquid Encapsulants <font class="fCount">(3)</font></label>
+                                        <input type="checkbox" id="scat_33" /> <label for="scat_33"> Liquid Encapsulants <font class="fCount">(3)</font></label>
                                     </li>
                                     <li class="fData">
-                                     <input type="checkbox" id="scat"/>   <label for="scat_1"> Temperature Data Loggers <font class="fCount">(1)</font></label>
+                                        <input type="checkbox" id="scat_34" /> <label for="scat_34"> Temperature Data Loggers <font class="fCount">(1)</font></label>
                                     </li>
                                     <li class="fData">
-                                     <input type="checkbox" id="scat"/>   <label for="scat_1"> Insulating Coating Powders <font class="fCount">(3)</font></label>
+                                        <input type="checkbox" id="scat_35" /> <label for="scat_35"> Insulating Coating Powders <font class="fCount">(3)</font></label>
                                     </li>
                                     <li class="fData">
-                                      <input type="checkbox" id="scat"/>  <label for="scat_1"> PCB Waterproofing Treatments <font class="fCount">(4)</font></label>
+                                        <input type="checkbox" id="scat_36" /> <label for="scat_36"> PCB Waterproofing Treatments <font class="fCount">(4)</font></label>
                                     </li>
                                     <li class="fData">
-                                      <input type="checkbox" id="scat"/>  <label for="scat_1"> Repellency Treatments <font class="fCount">(10)</font></label>
+                                        <input type="checkbox" id="scat_37" /> <label for="scat_37"> Repellency Treatments <font class="fCount">(10)</font></label>
                                     </li>
                                 </ul>
 
@@ -247,13 +257,14 @@
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Products</a>
+                                <span class="pull-right">Clear</span>
                             </h4>
                         </div>
-                        <div id="collapseFour" class="panel-collapse collapse">
+                        <div id="collapseFour" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 <ul id="collapse3" class="fBody">
                                     <li class="fData">
-                                        <select name="product_id" id="product_id" style="width:100%;" onchange="GetDocuments();">
+                                        <select>
                                             <option>-Select Product-</option>
                                             <option value="16">PIT1A-Series/1-mil Polyimide (Kapton) Tape Acrylic Adhesive Single-Sided</option>
                                             <option value="36">&nbsp;&nbsp;&nbsp;&nbsp;PIT1A/3/3mm (0.118") wide x 33m (36yd) long</option>
@@ -269,27 +280,28 @@
                             </div>
                         </div>
                     </div>
-                     <div class="panel panel-default">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Manufacturers</a>
+                                <span class="pull-right">Clear</span>
                             </h4>
                         </div>
-                        <div id="collapseFive" class="panel-collapse collapse">
+                        <div id="collapseFive" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 <ul id="collapse4" class="fBody">
-                                <li class="fData">
-                                    <label for="manuf_1" class="hover">  CAPLINQ Corporation <font class="fCount">(38)</font></label>
-                                </li>
-                                <li class="fData">
-                                    <label for="manuf_2">  SolEpoxy <font class="fCount">(4)</font></label>
-                                </li>
-                                <li class="fData">
-                                    <label for="manuf_31">  EFT Fibers <font class="fCount">(3)</font></label>
-                                </li>
-                                <li class="fData">
-                                    <label for="manuf_44">  Aculon, Inc. <font class="fCount">(10)</font></label>
-                                </li>
+                                    <li class="fData">
+                                        <input type="checkbox" id="manuf_1" /> <label for="manuf_1" class="hover">  CAPLINQ Corporation <font class="fCount">(38)</font></label>
+                                    </li>
+                                    <li class="fData">
+                                        <input type="checkbox" id="manuf_2" /> <label for="manuf_2">  SolEpoxy <font class="fCount">(4)</font></label>
+                                    </li>
+                                    <li class="fData">
+                                        <input type="checkbox" id="manuf_31" /> <label for="manuf_31">  EFT Fibers <font class="fCount">(3)</font></label>
+                                    </li>
+                                    <li class="fData">
+                                        <input type="checkbox" id="manuf_44" /> <label for="manuf_44">  Aculon, Inc. <font class="fCount">(10)</font></label>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -298,14 +310,15 @@
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Languages</a>
+                                <span class="pull-right">Clear</span>
                             </h4>
                         </div>
-                        <div id="collapseSix" class="panel-collapse collapse">
+                        <div id="collapseSix" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 <ul id="collapse4" class="fBody">
-                                <li class="fData">
-                                    <label for="language_1" class="hover"> English <font class="fCount">(38)</font></label>
-                                </li>
+                                    <li class="fData">
+                                        <input type="checkbox" id="language_1" /> <label for="language_1" class="hover"> English <font class="fCount">(38)</font></label>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -315,7 +328,259 @@
 
 
             </div>
-            <div class="col-md-9"> </div>
+            <div class="col-md-9 col-xs-12">
+                <section id="resp-tables">
+                    <h3>Technical Data Sheet : 55 results</h3>
+                    <hr/>
+                    <div class="selected-filters">
+                        <strong> Selected Filters: </strong>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default btn-secondary">Soldering Materials</button>
+                            <button type="button" class="btn btn-default btn-secondary"><i class="fa fa-close"></i></button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default btn-secondary">Insulation Materials</button>
+                            <button type="button" class="btn btn-default btn-secondary"><i class="fa fa-close"></i></button>
+                        </div>
+                    </div>
+                    <div class="heaader-paging">
+                        <div class="col-md-6">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <input type="search" class="form-control" id="search" placeholder="Search Library...">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                10 Records <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">20 Records</a>
+                                    <a class="dropdown-item" href="#">30 Records</a>
+                                    <a class="dropdown-item" href="#">50 Records</a>
+                                    <a class="dropdown-item" href="#">Show All</a>
+                                </div>
+                            </div>
+                            <div class="pull-right">
+                                <ul class="pagination">
+                                    <li><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr class="tableHeader">
+                                <th nowrap="nowrap" align="left">File Name</th>
+                                <th align="left">Language</th>
+                                <th width="10%" align="left">Size</th>
+                                <th align="left">Type</th>
+                                <th style="text-align: right;">Hits</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=11"
+                                        class="downloadlink category">SolEpoxy DK8-01 Blue TDS              </a></td>
+                                <td>English</td>
+                                <td>151.24 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>215</td>
+                            </tr>
+                            <tr class="normal-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=55"
+                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT1A TDS              </a></td>
+                                <td>English</td>
+                                <td>635.80 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>1639</td>
+                            </tr>
+                            <tr class="border-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=56"
+                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT1A-ESD TDS              </a></td>
+                                <td>English</td>
+                                <td>618.67 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>1539</td>
+                            </tr>
+                            <tr class="normal-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=57"
+                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT1N TDS              </a></td>
+                                <td>English</td>
+                                <td>656.21 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>895</td>
+                            </tr>
+                            <tr class="border-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=58"
+                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT1N-CR TDS              </a></td>
+                                <td>English</td>
+                                <td>725.36 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>871</td>
+                            </tr>
+                            <tr class="normal-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=59"
+                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT1S TDS              </a></td>
+                                <td>English</td>
+                                <td>638.19 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>1094</td>
+                            </tr>
+                            <tr class="border-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=60"
+                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT1SD TDS              </a></td>
+                                <td>English</td>
+                                <td>505.30 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>1044</td>
+                            </tr>
+                            <tr class="normal-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=61"
+                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT2A TDS              </a></td>
+                                <td>English</td>
+                                <td>637.15 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>1004</td>
+                            </tr>
+                            <tr class="border-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=62"
+                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT2A-WL TDS              </a></td>
+                                <td>English</td>
+                                <td>583.38 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>1049</td>
+                            </tr>
+                            <tr class="normal-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=63"
+                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT2N TDS              </a></td>
+                                <td>English</td>
+                                <td>663.50 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>950</td>
+                            </tr>
+                            <tr class="border-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=64"
+                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT2S TDS              </a></td>
+                                <td>English</td>
+                                <td>638.13 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>917</td>
+                            </tr>
+                            <tr class="normal-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=65"
+                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT2SD TDS              </a></td>
+                                <td>English</td>
+                                <td>642.38 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>1157</td>
+                            </tr>
+                            <tr class="border-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=66"
+                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT2S-RL TDS              </a></td>
+                                <td>English</td>
+                                <td>641.39 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>1154</td>
+                            </tr>
+                            <tr class="normal-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=67"
+                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT5N TDS              </a></td>
+                                <td>English</td>
+                                <td>657.15 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>921</td>
+                            </tr>
+                            <tr class="border-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=68"
+                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT5S TDS              </a></td>
+                                <td>English</td>
+                                <td>642.35 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>710</td>
+                            </tr>
+                            <tr class="normal-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=71"
+                                        class="downloadlink category">CAPLINQ Corporation Linqstat PIT1N-ALUM Series Film TDS              </a></td>
+                                <td>English</td>
+                                <td>726.13 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>1089</td>
+                            </tr>
+                            <tr class="border-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=73"
+                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT0.5S TDS              </a></td>
+                                <td>English</td>
+                                <td>638.71 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>817</td>
+                            </tr>
+                            <tr class="normal-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=80"
+                                        class="downloadlink category">CAPLINQ Corporation Linqtape PET1S TDS              </a></td>
+                                <td>English</td>
+                                <td>626.95 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>564</td>
+                            </tr>
+                            <tr class="border-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=81"
+                                        class="downloadlink category">CAPLINQ Corporation Linqtape PET2SG TDS              </a></td>
+                                <td>English</td>
+                                <td>628.31 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>656</td>
+                            </tr>
+                            <tr class="normal-row">
+                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=106"
+                                        class="downloadlink category">CAPLINQ Corporation Linqstat MVCF-Series TDS              </a></td>
+                                <td>English</td>
+                                <td>667.84 KB</td>
+                                <td>Technical Data Sheet</td>
+                                <td>406</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                     <div class="heaader-paging">
+                        <div class="col-md-6">
+                           
+                        </div>
+                        <div class="col-md-6">
+                            <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                10 Records <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">20 Records</a>
+                                    <a class="dropdown-item" href="#">30 Records</a>
+                                    <a class="dropdown-item" href="#">50 Records</a>
+                                    <a class="dropdown-item" href="#">Show All</a>
+                                </div>
+                            </div>
+                            <div class="pull-right">
+                                <ul class="pagination">
+                                    <li><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
 
             <!-- Bootstrap core JavaScript================================================== -->
             <!-- Placed at the end of the document so the pages load faster -->
@@ -323,5 +588,6 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
             <script src="assets/js/main.min.js"></script>
 </body>
+
 
 </html>
