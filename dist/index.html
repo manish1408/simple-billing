@@ -52,8 +52,9 @@
             <div class="col-md-3 col-xs-12 filter-boxes">
                 <h3>Document Filter</h3>
                 <hr/>
-                <button class="btn btn-xs btn-danger">Reset all filters</button>
-                <button class="btn btn-xs btn-danger">Collapse All</button>
+                <button id='btnReset' class="btn btn-xs btn-danger">Reset all filters</button>
+                <button id='btnCollapseAll' class="btn btn-xs btn-danger">Collapse All</button>
+                <button id='btnExpandAll' style="display:none;" class="btn btn-xs btn-danger">Expand All</button>
                 <h2 data-toggle="collapse" data-target="#demo"></h2>
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
@@ -344,15 +345,15 @@
                         </div>
                     </div>
                     <div class="heaader-paging">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-xs-12">
                             <form class="form-horizontal">
                                 <div class="form-group">
                                     <input type="search" class="form-control" id="search" placeholder="Search Library...">
                                 </div>
                             </form>
                         </div>
-                        <div class="col-md-6">
-                            <div class="btn-group pull-right">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="btn-group pull-right clear-pull-right">
                                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 10 Records <i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </button>
@@ -363,7 +364,7 @@
                                     <a class="dropdown-item" href="#">Show All</a>
                                 </div>
                             </div>
-                            <div class="pull-right">
+                            <div class="pull-right clear-pull-right">
                                 <ul class="pagination">
                                     <li><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
                                     <li class="active"><a href="#">1</a></li>
@@ -379,182 +380,162 @@
                     <table class="table cf">
                         <thead class="cf">
                             <tr class="tableHeader">
-                                <th nowrap="nowrap" align="left">File Name</th>
-                                <th align="left">Language</th>
-                                <th width="10%" align="left">Size</th>
-                                <th align="left">Type</th>
-                                <th style="text-align: right;">Hits</th>
+                                <th>File Name</th>
+                                <th>Language</th>
+                                <th>Size</th>
+                                <th>Type</th>
+                                <th>Hits</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="border-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=11"
-                                        class="downloadlink category">SolEpoxy DK8-01 Blue TDS              </a></td>
-                                <td>English</td>
-                                <td>151.24 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>215</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=11">SolEpoxy DK8-01 Blue TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">151.24 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">215</td>
                             </tr>
                             <tr class="normal-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=55"
-                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT1A TDS              </a></td>
-                                <td>English</td>
-                                <td>635.80 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>1639</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=55">CAPLINQ Corporation Linqtape PIT1A TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">635.80 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">1639</td>
                             </tr>
                             <tr class="border-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=56"
-                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT1A-ESD TDS              </a></td>
-                                <td>English</td>
-                                <td>618.67 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>1539</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=56">CAPLINQ Corporation Linqtape PIT1A-ESD TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">618.67 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">1539</td>
                             </tr>
                             <tr class="normal-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=57"
-                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT1N TDS              </a></td>
-                                <td>English</td>
-                                <td>656.21 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>895</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=57">CAPLINQ Corporation Linqtape PIT1N TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">656.21 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">895</td>
                             </tr>
                             <tr class="border-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=58"
-                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT1N-CR TDS              </a></td>
-                                <td>English</td>
-                                <td>725.36 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>871</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=58">CAPLINQ Corporation Linqtape PIT1N-CR TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">725.36 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">871</td>
                             </tr>
                             <tr class="normal-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=59"
-                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT1S TDS              </a></td>
-                                <td>English</td>
-                                <td>638.19 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>1094</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=59">CAPLINQ Corporation Linqtape PIT1S TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">638.19 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">1094</td>
                             </tr>
                             <tr class="border-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=60"
-                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT1SD TDS              </a></td>
-                                <td>English</td>
-                                <td>505.30 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>1044</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=60">CAPLINQ Corporation Linqtape PIT1SD TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">505.30 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">1044</td>
                             </tr>
                             <tr class="normal-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=61"
-                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT2A TDS              </a></td>
-                                <td>English</td>
-                                <td>637.15 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>1004</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=61">CAPLINQ Corporation Linqtape PIT2A TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">637.15 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">1004</td>
                             </tr>
                             <tr class="border-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=62"
-                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT2A-WL TDS              </a></td>
-                                <td>English</td>
-                                <td>583.38 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>1049</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=62">CAPLINQ Corporation Linqtape PIT2A-WL TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">583.38 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">1049</td>
                             </tr>
                             <tr class="normal-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=63"
-                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT2N TDS              </a></td>
-                                <td>English</td>
-                                <td>663.50 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>950</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=63">CAPLINQ Corporation Linqtape PIT2N TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">663.50 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">950</td>
                             </tr>
                             <tr class="border-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=64"
-                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT2S TDS              </a></td>
-                                <td>English</td>
-                                <td>638.13 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>917</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=64">CAPLINQ Corporation Linqtape PIT2S TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">638.13 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">917</td>
                             </tr>
                             <tr class="normal-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=65"
-                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT2SD TDS              </a></td>
-                                <td>English</td>
-                                <td>642.38 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>1157</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=65">CAPLINQ Corporation Linqtape PIT2SD TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">642.38 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">1157</td>
                             </tr>
                             <tr class="border-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=66"
-                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT2S-RL TDS              </a></td>
-                                <td>English</td>
-                                <td>641.39 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>1154</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=66">CAPLINQ Corporation Linqtape PIT2S-RL TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">641.39 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">1154</td>
                             </tr>
                             <tr class="normal-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=67"
-                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT5N TDS              </a></td>
-                                <td>English</td>
-                                <td>657.15 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>921</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=67">CAPLINQ Corporation Linqtape PIT5N TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">657.15 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">921</td>
                             </tr>
                             <tr class="border-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=68"
-                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT5S TDS              </a></td>
-                                <td>English</td>
-                                <td>642.35 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>710</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=68">CAPLINQ Corporation Linqtape PIT5S TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">642.35 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">710</td>
                             </tr>
                             <tr class="normal-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=71"
-                                        class="downloadlink category">CAPLINQ Corporation Linqstat PIT1N-ALUM Series Film TDS              </a></td>
-                                <td>English</td>
-                                <td>726.13 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>1089</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=71">CAPLINQ Corporation Linqstat PIT1N-ALUM Series Film TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">726.13 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">1089</td>
                             </tr>
                             <tr class="border-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=73"
-                                        class="downloadlink category">CAPLINQ Corporation Linqtape PIT0.5S TDS              </a></td>
-                                <td>English</td>
-                                <td>638.71 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>817</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=73">CAPLINQ Corporation Linqtape PIT0.5S TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">638.71 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">817</td>
                             </tr>
                             <tr class="normal-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=80"
-                                        class="downloadlink category">CAPLINQ Corporation Linqtape PET1S TDS              </a></td>
-                                <td>English</td>
-                                <td>626.95 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>564</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=80">CAPLINQ Corporation Linqtape PET1S TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">626.95 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">564</td>
                             </tr>
                             <tr class="border-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=81"
-                                        class="downloadlink category">CAPLINQ Corporation Linqtape PET2SG TDS              </a></td>
-                                <td>English</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=81">CAPLINQ Corporation Linqtape PET2SG TDS              </a></td>
+                                <td data-title="Language">English</td>
                                 <td>628.31 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>656</td>
+                                <td data-title="Size">Technical Data Sheet</td>
+                                <td data-title="Hits">656</td>
                             </tr>
                             <tr class="normal-row">
-                                <td nowrap="nowrap"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=106"
-                                        class="downloadlink category">CAPLINQ Corporation Linqstat MVCF-Series TDS              </a></td>
-                                <td>English</td>
-                                <td>667.84 KB</td>
-                                <td>Technical Data Sheet</td>
-                                <td>406</td>
+                                <td data-title="File Name"><img alt="Link" src="http://www.caplinq.com/images/M_images/weblink.png"> <a href="http://www.caplinq.com/index.php?option=com_filecabinet&amp;task=download&amp;cid[]=106">CAPLINQ Corporation Linqstat MVCF-Series TDS              </a></td>
+                                <td data-title="Language">English</td>
+                                <td data-title="Size">667.84 KB</td>
+                                <td data-title="Type">Technical Data Sheet</td>
+                                <td data-title="Hits">406</td>
                             </tr>
                         </tbody>
                     </table>
-                     <div class="heaader-paging">
-                        <div class="col-md-6">
-                           
+                    <div class="heaader-paging">
+                        <div class="col-md-6 col-xs-12">
+
                         </div>
-                        <div class="col-md-6">
-                            <div class="btn-group pull-right">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="btn-group pull-right clear-pull-right">
                                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 10 Records <i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </button>
@@ -565,7 +546,7 @@
                                     <a class="dropdown-item" href="#">Show All</a>
                                 </div>
                             </div>
-                            <div class="pull-right">
+                            <div class="pull-right clear-pull-right">
                                 <ul class="pagination">
                                     <li><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
                                     <li class="active"><a href="#">1</a></li>
@@ -586,7 +567,37 @@
             <!-- Placed at the end of the document so the pages load faster -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <script src="assets/js/main.min.js"></script>
+            <script>
+                $('#btnCollapseAll').click(function() {
+                    $('#btnExpandAll').show();
+                    $('#btnCollapseAll').hide();
+
+                    $('#collapseOne').removeClass('in');
+                    $('#collapseTwo').removeClass('in');
+                    $('#collapseThree').removeClass('in');
+                    $('#collapseFour').removeClass('in');
+                    $('#collapseFive').removeClass('in');
+                    $('#collapseSix').removeClass('in');
+                    
+                });
+
+                $('#btnExpandAll').click(function() {
+                    $('#btnCollapseAll').show();
+                    $('#btnExpandAll').hide();
+                     $('#collapseOne').addClass('in');
+                    $('#collapseTwo').addClass('in');
+                    $('#collapseThree').addClass('in');
+                    $('#collapseFour').addClass('in');
+                    $('#collapseFive').addClass('in');
+                    $('#collapseSix').addClass('in');
+                    
+                });
+
+                $('#btnReset').click(function(){
+                   $('input[type=checkbox]').attr('checked',false);
+                   $('input[type=radio]').attr('checked',false);
+                });
+            </script>
 </body>
 
 

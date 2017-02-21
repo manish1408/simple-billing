@@ -119,6 +119,7 @@ html,body {
 	#resp-tables td:before { content: attr(data-title); }
 }
 .main {
+  
     margin-top: 60px;
     .selected-filters {
         padding: 10px 0px;
@@ -140,12 +141,27 @@ html,body {
         .form-group {
             margin-bottom: 0px;
         }
-        #search{
-            max-width: 230px;
-        }
+       
         .pagination {
             margin: 0px;
             margin-right: 10px;
         }
+    }
+     @media only screen and (min-width: 426px) {
+        #search{
+            max-width: 230px;
+        }
+     }
+      @media only screen and (max-width: 425px) {
+        .clear-pull-right {
+           width: 50%;
+        }
+         .heaader-paging {
+            #search{
+                width: 95% !important;
+                margin-bottom: 5px;
+            }
+         }
+        
     }
 }
