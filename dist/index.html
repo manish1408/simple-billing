@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Theme Template for Bootstrap</title>
+    <title>Caplinq</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/main.min.css" rel="stylesheet">
@@ -572,24 +572,15 @@
                     $('#btnExpandAll').show();
                     $('#btnCollapseAll').hide();
 
-                    $('#collapseOne').removeClass('in');
-                    $('#collapseTwo').removeClass('in');
-                    $('#collapseThree').removeClass('in');
-                    $('#collapseFour').removeClass('in');
-                    $('#collapseFive').removeClass('in');
-                    $('#collapseSix').removeClass('in');
-                    
+                   $('.panel-collapse.in')
+                    .collapse('hide');
                 });
 
                 $('#btnExpandAll').click(function() {
                     $('#btnCollapseAll').show();
                     $('#btnExpandAll').hide();
-                     $('#collapseOne').addClass('in');
-                    $('#collapseTwo').addClass('in');
-                    $('#collapseThree').addClass('in');
-                    $('#collapseFour').addClass('in');
-                    $('#collapseFive').addClass('in');
-                    $('#collapseSix').addClass('in');
+                    $('.panel-collapse:not(".in")')
+                    .collapse('show');
                     
                 });
 
